@@ -1,0 +1,112 @@
+INCIDENTIQ
+IT INCIDENT TRIAGE CONSOLE
+
+Enter incident title: Office Network Outage
+Select service:
+
+1. Network
+2. Application
+3. Hardware
+4. Access
+5. Other
+
+Enter service: Network
+Enter incident description: Office network is completely unavailable.
+Enter number of affected users: 80
+
+Select impact:
+
+1. Minimal
+2. Low
+3. High
+4. Critical
+
+Enter impact: 4
+
+Select urgency:
+
+1. Low
+2. Moderate
+3. High
+4. Immediate
+
+Enter urgency: 4
+
+INCIDENT REPORT
+
+Incident ID: INC-001
+Title: Office Network Outage
+Service: Network
+Affected Users: 80
+Impact: Critical
+Urgency: Immediate
+Priority Score: 16
+Priority: P1 - Critical
+Response Target: 1 hour
+
+MAJOR INCIDENT ALERT!
+This incident requires immediate attention.
+
+Do you want to register another incident? Y
+
+Enter incident title: Laptop Keyboard Issue
+Select service:
+
+1. Network
+2. Application
+3. Hardware
+4. Access
+5. Other
+
+Enter service: Hardware
+Enter incident description: Laptop keyboard keys are not responding.
+Enter number of affected users: 1
+
+Select impact:
+
+1. Minimal
+2. Low
+3. High
+4. Critical
+
+Enter impact: 1
+
+Select urgency:
+
+1. Low
+2. Moderate
+3. High
+4. Immediate
+
+Enter urgency: 2
+
+INCIDENT REPORT
+
+Incident ID: INC-002
+Title: Laptop Keyboard Issue
+Service: Hardware
+Affected Users: 1
+Impact: Minimal
+Urgency: Moderate
+Priority Score: 6
+Priority: P3 - Medium
+Response Target: 8 hours
+
+This is not a major incident.
+
+Do you want to register another incident? N
+
+OPERATIONAL SUMMARY
+
+Total Incidents: 2
+P1 - Critical: 1
+P2 - High: 0
+P3 - Medium: 1
+P4 - Low: 0
+
+Major Incidents: 1
+Total Affected Users: 81
+Average Affected Users: 40.5
+P1/P2 Percentage: 50.0%
+
+Thank you for using IncidentIQ!
