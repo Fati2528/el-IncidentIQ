@@ -1,0 +1,54 @@
+IncidentIQ – Test Cases
+
+1. Input Validation Test Cases
+
+Test ID| Input| Field| Expected Result
+TC01| 0| Impact| Invalid input. Ask again.
+TC02| -1| Impact| Invalid input. Ask again.
+TC03| 2| Impact| Accepted. Impact = Low.
+TC04| 0| Urgency| Invalid input. Ask again.
+TC05| -1| Urgency| Invalid input. Ask again.
+TC06| 2| Urgency| Accepted. Urgency = Moderate.
+TC07| -1| Affected Users| Invalid input. Ask again.
+TC08| 0| Affected Users| Accepted. Zero users affected.
+TC09| 2| Affected Users| Accepted. Two users affected.
+TC10| abc| Integer field| Invalid input. Ask for a number again.
+
+2. Priority Calculation Test Cases
+
+Formula:
+
+Priority Score = (Impact × 2) + (Urgency × 2)
+
+Test ID| Impact| Urgency| Score| Expected Priority
+TC11| 4| 4| 16| P1 – Critical
+TC12| 3| 3| 12| P2 – High
+TC13| 1| 2| 6| P3 – Medium
+TC14| 1| 1| 4| P4 – Low
+
+3. Major Incident Test Cases
+
+Test ID| Impact| Affected Users| Expected Result
+TC15| 4| 80| Major Incident
+TC16| 4| 49| Not a Major Incident
+TC17| 3| 80| Not a Major Incident
+
+4. Summary Test Case
+
+Input: Register two incidents.
+
+Expected summary:
+
+- Total incidents: 2
+- P1 incidents: 1
+- P2 incidents: 0
+- P3 incidents: 1
+- P4 incidents: 0
+- Major incidents: 1
+- Total affected users: 81
+- Average affected users: 40.5
+- P1/P2 percentage: 50%
+
+Test Result
+
+The test cases are designed to check input validation, priority calculation, major incident detection, and summary generation.
